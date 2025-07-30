@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feria Vocacional 2025 - Pasaporte Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Página 1: Portada -->
+    <section id="page-1" class="page active">
+      <div class="page-content">
+        <div class="passport-cover">
+          <h1>Feria Vocacional 2025</h1>
+          <div class="cover-image">
+            <div class="passport-icon">📖</div>
+          </div>
+          <p class="subtitle">
+            Tu pasaporte digital para explorar los mundos vocacionales
+          </p>
+          <button id="open-passport-btn" class="btn-primary">
+            Abrir Pasaporte
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 2: Guía de uso -->
+    <section id="page-2" class="page">
+      <div class="page-content">
+        <h2 class="guide-title">Guía de Uso</h2>
+        <div class="guide-content">
+          <div class="guide-item">
+            <div class="guide-icon">🗺️</div>
+            <h3>Mapa de la Feria</h3>
+            <p>Usa el mapa para ubicarte en la feria.</p>
+            <button class="btn-secondary" id="show-map-btn">Ver Mapa</button>
+          </div>
+          <div class="guide-item">
+            <div class="guide-icon">❓</div>
+            <h3>Ayuda</h3>
+            <p>¿Necesitas ayuda? Consulta esta guía.</p>
+            <button class="btn-secondary" id="help-btn">Ayuda</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 3: Ingresar Palabra Clave -->
+    <section id="page-3" class="page">
+      <div class="page-content" id="page-3-content">
+        <h2 class="guide-title">Ingresar Palabra Clave</h2>
+        <div class="guide-content">
+          <div class="guide-item">
+            <div class="guide-icon">✏️</div>
+            <h3>Desbloquear Insignias</h3>
+            <p>
+              Ingresa las palabras clave que obtuviste en cada mundo para
+              desbloquear las insignias y completar tu pasaporte digital.
+            </p>
+            <button class="btn-secondary" id="keyword-btn">
+              Ingresar Clave
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 4: Info del pasaporte -->
+    <section id="page-4" class="page">
+      <div class="page-content">
+        <h2>¿Qué es este Pasaporte?</h2>
+        <div class="info-content">
+          <p>
+            Este pasaporte digital es tu compañero en la Feria Vocacional 2025.
+            Te ayudará a:
+          </p>
+          <ul>
+            <li>Explorar diferentes mundos vocacionales</li>
+            <li>Descubrir tus intereses y habilidades</li>
+            <li>Recopilar insignias como recuerdo de tu experiencia</li>
+            <li>Guiarte por las actividades disponibles</li>
+          </ul>
+          <p>
+            ¡Completa tu pasaporte visitando todos los mundos y desbloqueando
+            todas las insignias!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Páginas 5-12: Insignias -->
+    <!-- Página 5: Insignia Explorador -->
+    <section id="page-5" class="page">
+      <div class="page-content">
+        <div class="badge-page">
+          <div class="badge-container">
+            <div class="badge-large" id="badge-explorador-large">🔒</div>
+            <h2>Explorador</h2>
+            <p class="badge-status" id="status-explorador">Bloqueado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 6: Info Explorador -->
+    <section id="page-6" class="page">
+      <div class="page-content">
+        <h2>Mundo del Explorador</h2>
+        <div class="world-info">
+          <p>
+            Los exploradores son curiosos por naturaleza. Buscan descubrir
+            nuevos horizontes y entender el mundo que les rodea.
+          </p>
+          <div class="world-traits">
+            <h3>Características:</h3>
+            <ul>
+              <li>Curiosidad insaciable</li>
+              <li>Investigación constante</li>
+              <li>Descubrimiento de nuevas posibilidades</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 7: Insignia Creador -->
+    <section id="page-7" class="page">
+      <div class="page-content">
+        <div class="badge-page">
+          <div class="badge-container">
+            <div class="badge-large" id="badge-creador-large">🔒</div>
+            <h2>Creador</h2>
+            <p class="badge-status" id="status-creador">Bloqueado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 8: Info Creador -->
+    <section id="page-8" class="page">
+      <div class="page-content">
+        <h2>Mundo del Creador</h2>
+        <div class="world-info">
+          <p>
+            Los creadores transforman ideas en realidad. Su imaginación no tiene
+            límites y siempre buscan nuevas formas de expresarse.
+          </p>
+          <div class="world-traits">
+            <h3>Características:</h3>
+            <ul>
+              <li>Imaginación desbordante</li>
+              <li>Creatividad en acción</li>
+              <li>Expresión artística</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 9: Insignia Cuidador -->
+    <section id="page-9" class="page">
+      <div class="page-content">
+        <div class="badge-page">
+          <div class="badge-container">
+            <div class="badge-large" id="badge-cuidador-large">🔒</div>
+            <h2>Cuidador</h2>
+            <p class="badge-status" id="status-cuidador">Bloqueado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 10: Info Cuidador -->
+    <section id="page-10" class="page">
+      <div class="page-content">
+        <h2>Mundo del Cuidador</h2>
+        <div class="world-info">
+          <p>
+            Los cuidadores tienen un corazón empático. Se preocupan por el
+            bienestar de otros y buscan ayudar a quienes lo necesitan.
+          </p>
+          <div class="world-traits">
+            <h3>Características:</h3>
+            <ul>
+              <li>Empatía profunda</li>
+              <li>Compasión hacia otros</li>
+              <li>Deseo de ayudar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 11: Insignia Estratega -->
+    <section id="page-11" class="page">
+      <div class="page-content">
+        <div class="badge-page">
+          <div class="badge-container">
+            <div class="badge-large" id="badge-estratega-large">🔒</div>
+            <h2>Estratega</h2>
+            <p class="badge-status" id="status-estratega">Bloqueado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 12: Info Estratega -->
+    <section id="page-12" class="page">
+      <div class="page-content">
+        <h2>Mundo del Estratega</h2>
+        <div class="world-info">
+          <p>
+            Los estrategas son líderes natos. Planifican, organizan y guían a
+            otros hacia objetivos comunes con visión de futuro.
+          </p>
+          <div class="world-traits">
+            <h3>Características:</h3>
+            <ul>
+              <li>Liderazgo natural</li>
+              <li>Pensamiento estratégico</li>
+              <li>Capacidad de organización</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página 13: Progreso Final -->
+    <section id="page-13" class="page">
+      <div class="page-content">
+        <div class="passport-ending">
+          <h2>¡Has llegado al final!</h2>
+          <div class="progress-summary">
+            <h3>Tu Progreso</h3>
+            <div class="medals-progress">
+              <p>
+                Has obtenido <span id="medals-count">0</span> de
+                <span id="total-medals">4</span> medallas
+              </p>
+              <div class="medals-display">
+                <div class="medal-item" id="medal-explorador">🔒</div>
+                <div class="medal-item" id="medal-creador">🔒</div>
+                <div class="medal-item" id="medal-cuidador">🔒</div>
+                <div class="medal-item" id="medal-estratega">🔒</div>
+              </div>
+            </div>
+          </div>
+          <p class="thank-you">
+            Gracias por explorar los mundos de la Feria Vocacional 2025.
+          </p>
+          <button id="restart-btn" class="btn-secondary">
+            Reiniciar Pasaporte
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navegación -->
+    <nav class="page-navigation">
+      <button id="prev-btn" class="nav-btn">←</button>
+      <span id="page-indicator">1 / 11</span>
+      <button id="next-btn" class="nav-btn">→</button>
+    </nav>
+
+    <!-- Modal para palabra clave -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h3>Ingresa la palabra clave</h3>
+        <input type="text" id="keyword-input" placeholder="Palabra clave..." />
+        <button id="submit-keyword">Enviar</button>
+        <p id="modal-message"></p>
+      </div>
+    </div>
+
+    <!-- Modal de ayuda -->
+    <div id="help-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-help" class="close">&times;</span>
+        <h3>Ayuda</h3>
+        <div class="help-content">
+          <p><strong>¿Cómo usar el pasaporte?</strong></p>
+          <ul>
+            <li>Navega entre páginas usando los botones ← y →</li>
+            <li>Visita los mundos en la feria para obtener palabras clave</li>
+            <li>Ingresa las palabras clave para desbloquear insignias</li>
+            <li>Tu progreso se guarda automáticamente</li>
+          </ul>
+          <p><strong>Palabras clave:</strong></p>
+          <ul>
+            <li>Explorador: "curiosidad"</li>
+            <li>Creador: "imaginación"</li>
+            <li>Cuidador: "empatía"</li>
+            <li>Estratega: "liderazgo"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal del mapa -->
+    <div id="map-modal" class="modal hidden">
+      <div class="modal-content map-modal-content">
+        <span id="close-map" class="close">&times;</span>
+        <h3>Mapa de la Feria Vocacional 2025</h3>
+        <div class="map-container">
+          <img
+            src="assets/MAPAICESI.jpeg"
+            alt="Mapa de la Feria Vocacional"
+            class="feria-map"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
