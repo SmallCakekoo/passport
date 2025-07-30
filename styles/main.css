@@ -212,6 +212,26 @@ button {
   color: var(--dark-gray);
 }
 
+/* Títulos de páginas de información */
+.page-content h2 {
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos específicos para páginas de información del pasaporte y mundos */
+.page-content h2:not(.guide-title):not(.badge-page h2) {
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 /* Páginas de insignias */
 .badge-page {
   text-align: center;
@@ -273,7 +293,7 @@ button {
 /* Páginas de información de mundos */
 .world-info {
   line-height: 1.6;
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -668,4 +688,8 @@ button {
 
 .thank-you {
   margin-bottom: 10px;
+}
+
+.mundo-title {
+  margin-top: -80px;
 }
