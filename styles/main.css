@@ -630,28 +630,28 @@ button {
   }
 
   .guide-content {
-    gap: 12px;
+    gap: 15px;
   }
 
   .guide-item {
-    padding: 15px 12px;
-    border-radius: 10px;
+    padding: 18px 15px;
+    border-radius: 12px;
   }
 
   .guide-icon {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
   }
 
   .guide-item h3 {
-    font-size: 0.95rem;
-    margin-bottom: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
   }
 
   .guide-item p {
-    font-size: 0.8rem;
-    margin-bottom: 12px;
-    line-height: 1.3;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
   }
 
   .page-navigation {
@@ -696,4 +696,294 @@ button {
 
 .passport-question {
   margin-top: -10px;
+}
+
+/* Página de Mundos Vocacionales */
+.worlds-title {
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.worlds-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.world-card {
+  background: var(--light-gray);
+  border-radius: 12px;
+  padding: 15px 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.world-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-pink);
+}
+
+.world-badge {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.world-badge.unlocked {
+  animation: unlockPulse 1s ease-in-out;
+}
+
+.world-card h3 {
+  color: var(--primary-blue);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.world-motto {
+  color: var(--accent-pink);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.world-status {
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.world-status.unlocked {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.world-info-btn {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.world-info-btn:hover {
+  background: var(--accent-pink);
+  transform: scale(1.05);
+}
+
+/* Modal de información de mundos */
+.world-info-modal-content {
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.world-info-modal-content h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.world-info-modal-content .world-description {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.world-info-modal-content .world-areas {
+  background: var(--light-gray);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.world-info-modal-content .world-areas h4 {
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.world-info-modal-content .world-areas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.world-info-modal-content .world-areas li {
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  padding: 5px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.world-info-modal-content .world-areas li:last-child {
+  border-bottom: none;
+}
+
+.world-info-modal-content .world-areas li::before {
+  content: "•";
+  color: var(--accent-pink);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Página de Encuesta */
+.survey-title {
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.survey-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.survey-intro {
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.survey-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.survey-link-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: var(--accent-pink);
+  color: var(--white);
+  text-decoration: none;
+  padding: 25px 40px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(230, 0, 126, 0.3);
+  min-width: 250px;
+}
+
+.survey-link-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(230, 0, 126, 0.4);
+  background: var(--primary-blue);
+}
+
+.survey-link-icon {
+  font-size: 3rem;
+  display: block;
+}
+
+.survey-link-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.survey-link-note {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Responsive para mundos */
+@media (max-width: 480px) {
+  .worlds-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .world-card {
+    padding: 12px 10px;
+  }
+
+  .world-badge {
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+  }
+
+  .world-card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  .world-motto {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+
+  .world-status {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .world-info-btn {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+    border-radius: 12px;
+  }
+
+  /* Responsive para encuesta */
+  .survey-content {
+    gap: 20px;
+    min-height: 50vh;
+  }
+
+  .survey-intro {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .survey-link-btn {
+    padding: 20px 30px;
+    font-size: 1rem;
+    min-width: 200px;
+  }
+
+  .survey-link-icon {
+    font-size: 2.5rem;
+  }
+
+  .survey-link-text {
+    font-size: 1rem;
+  }
+
+  .survey-link-note {
+    font-size: 0.8rem;
+  }
 }
