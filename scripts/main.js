@@ -38,6 +38,18 @@ const mundosInfo = {
       "Asesorías organizacionales",
       "Crecimiento y plan carrera en empresas",
     ],
+    invitados: [
+      {
+        nombre: "Juan Pérez",
+        imagen: "https://picsum.photos/200",
+        salón: "201D",
+      },
+      {
+        nombre: "Juana Lucia",
+        imagen: "https://picsum.photos/200",
+        salón: "209D",
+      },
+    ],
   },
   social: {
     titulo: "Mundo Social",
@@ -53,6 +65,23 @@ const mundosInfo = {
       "Servicios de salud y bienestar",
       "Voluntariados y cooperación internacional",
       "Educación, pedagogía, formación y enseñanza a diversas poblaciones",
+    ],
+    invitados: [
+      {
+        nombre: "María González",
+        imagen: "https://picsum.photos/200",
+        salón: "205D",
+      },
+      {
+        nombre: "Carlos Rodríguez",
+        imagen: "https://picsum.photos/200",
+        salón: "207D",
+      },
+      {
+        nombre: "Ana Martínez",
+        imagen: "https://picsum.photos/200",
+        salón: "203D",
+      },
     ],
   },
   oficios: {
@@ -70,10 +99,27 @@ const mundosInfo = {
       "Transporte, logística y apoyo comunitario",
       "Artistas formados o autodidactas (músicos, bailarines, actores, entre otros)",
     ],
+    invitados: [
+      {
+        nombre: "Luis Fernández",
+        imagen: "https://picsum.photos/200",
+        salón: "301D",
+      },
+      {
+        nombre: "Carmen López",
+        imagen: "https://picsum.photos/200",
+        salón: "303D",
+      },
+      {
+        nombre: "Roberto Silva",
+        imagen: "https://picsum.photos/200",
+        salón: "305D",
+      },
+    ],
   },
   emprendimiento: {
     titulo: "Mundo Emprendimiento",
-    motto: "Crea Sendas, impulsa el crecimiento",
+    motto: "Sendas para el crecimiento",
     imagen: "assets/mundos/emprendimiento.png",
     descripcion:
       "Este mundo es para las personas soñadoras que se atreven a transformar ideas en realidades. Si sientes el deseo de crear algo propio, de resolver necesidades, de proponer alternativas o generar impacto a través de proyectos sostenibles, este es tu espacio. Aquí nacen negocios, iniciativas comunitarias, marcas personales y propuestas que abren oportunidades para ti y para otros.",
@@ -92,6 +138,23 @@ const mundosInfo = {
       "Producción y venta de alimentos",
       "Comercio digital / E-commerce",
       "Iniciativas independientes en arte, moda, tecnología, educación",
+    ],
+    invitados: [
+      {
+        nombre: "Sofia Vargas",
+        imagen: "https://picsum.photos/200",
+        salón: "401D",
+      },
+      {
+        nombre: "Diego Morales",
+        imagen: "https://picsum.photos/200",
+        salón: "403D",
+      },
+      {
+        nombre: "Valentina Ruiz",
+        imagen: "https://picsum.photos/200",
+        salón: "405D",
+      },
     ],
   },
 };
@@ -200,6 +263,30 @@ function mostrarInfoMundo(mundo) {
   const info = mundosInfo[mundo];
   if (!info) return;
 
+  let invitadosHTML = "";
+  if (info.invitados && info.invitados.length > 0) {
+    invitadosHTML = `
+      <div class="world-guests">
+        <h4>Invitados especiales:</h4>
+        <div class="guests-grid">
+          ${info.invitados
+            .map(
+              (invitado) => `
+            <div class="guest-card">
+              <img src="${invitado.imagen}" alt="${invitado.nombre}" class="guest-image">
+              <div class="guest-info">
+                <h5>${invitado.nombre}</h5>
+                <p class="guest-room">Salón: ${invitado.salón}</p>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+  }
+
   worldInfoContent.innerHTML = `
     <h3>${info.titulo}</h3>
     <p class="world-description">${info.descripcion}</p>
@@ -209,6 +296,7 @@ function mostrarInfoMundo(mundo) {
         ${info.areas.map((area) => `<li>${area}</li>`).join("")}
       </ul>
     </div>
+    ${invitadosHTML}
   `;
 
   worldInfoModal.classList.remove("hidden");
