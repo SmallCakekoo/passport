@@ -1,163 +1,26 @@
-// Configuración de palabras clave y insignias
-const claves = {
-  ejecutivo: {
-    palabra: "liderazgo",
-    badge: "badge-ejecutivo-large",
-    status: "status-ejecutivo",
-  },
-  social: {
-    palabra: "servicio",
-    badge: "badge-social-large",
-    status: "status-social",
-  },
-  oficios: {
-    palabra: "práctica",
-    badge: "badge-oficios-large",
-    status: "status-oficios",
-  },
-  emprendimiento: {
-    palabra: "creatividad",
-    badge: "badge-emprendimiento-large",
-    status: "status-emprendimiento",
-  },
-};
+// Variables globales para almacenar datos del JSON
+let claves = {};
+let mundosInfo = {};
 
-// Información de los mundos
-const mundosInfo = {
-  ejecutivo: {
-    titulo: "Mundo Ejecutivo",
-    motto: "Lidera, Decide, Transforma",
-    imagen: "assets/mundos/ejecutivo.png",
-    descripcion:
-      "Si tu vocación se enfoca en el mundo corporativo, empresas e instituciones de diferente índole, y sientes que tu proyecto de vida te llama a crecer y contribuir al crecimiento de alguna organización, entonces este es tu lugar para mover la inspiración en otros/as.",
-    areas: [
-      "El liderazgo de organizaciones y personal",
-      "Puestos de gestión de recursos",
-      "Toma de decisiones estratégicas",
-      "Relaciones públicas",
-      "Asesorías organizacionales",
-      "Crecimiento y plan carrera en empresas",
-    ],
-    invitados: [
-      {
-        nombre: "Juan Pérez",
-        imagen: "https://picsum.photos/200",
-        salón: "201D",
-      },
-      {
-        nombre: "Juana Lucia",
-        imagen: "https://picsum.photos/200",
-        salón: "209D",
-      },
-    ],
-  },
-  social: {
-    titulo: "Mundo Social",
-    motto: "Profesiones al servicio de la vida",
-    imagen: "assets/mundos/social.png",
-    descripcion:
-      "Este mundo convoca a aquellas personas que se sienten llamadas a servir y transformar a las comunidades en las que viven y/o se relacionan. Ven si te permites conocer, escuchar, sentir la historia, el dolor, el amor y las alegrías de las comunidades y está dispuesto a vivir sus luchas y hacer parte de la transformación de sus mundos.",
-    areas: [
-      "Formulación y ejecución de proyectos sociales",
-      "Liderazgo social",
-      "Participación en colectivos, grupos sociales, organizaciones no-gubernamentales (ONG)",
-      "Gestión y participación desde proyectos y actividades de intervención",
-      "Servicios de salud y bienestar",
-      "Voluntariados y cooperación internacional",
-      "Educación, pedagogía, formación y enseñanza a diversas poblaciones",
-    ],
-    invitados: [
-      {
-        nombre: "María González",
-        imagen: "https://picsum.photos/200",
-        salón: "205D",
-      },
-      {
-        nombre: "Carlos Rodríguez",
-        imagen: "https://picsum.photos/200",
-        salón: "207D",
-      },
-      {
-        nombre: "Ana Martínez",
-        imagen: "https://picsum.photos/200",
-        salón: "203D",
-      },
-    ],
-  },
-  oficios: {
-    titulo: "Mundo Oficios",
-    motto: "Maestros de la práctica. La vocación del corazón a la práctica",
-    imagen: "assets/mundos/oficios.png",
-    descripcion:
-      "Este mundo convoca a quienes, con sus manos, saberes y oficios, hacen posible la vida diaria de nuestras comunidades. Personas que transforman, reparan, crean, cuidan, cocinan, construyen y sostienen desde lo práctico y lo esencial. Ven si sientes que tu vocación está en lo concreto, en lo útil, en lo que se hace con destreza, compromiso y amor por los demás.",
-    areas: [
-      "Oficios de reparación, mantenimiento y construcción",
-      "Cocina tradicional y/o comunitaria",
-      "Oficios de cuidado (niñez, personas mayores, personas con discapacidad)",
-      "Producción artesanal, manualidades y oficios artísticos",
-      "Agricultura, jardinería y oficios ligados a la tierra",
-      "Transporte, logística y apoyo comunitario",
-      "Artistas formados o autodidactas (músicos, bailarines, actores, entre otros)",
-    ],
-    invitados: [
-      {
-        nombre: "Luis Fernández",
-        imagen: "https://picsum.photos/200",
-        salón: "301D",
-      },
-      {
-        nombre: "Carmen López",
-        imagen: "https://picsum.photos/200",
-        salón: "303D",
-      },
-      {
-        nombre: "Roberto Silva",
-        imagen: "https://picsum.photos/200",
-        salón: "305D",
-      },
-    ],
-  },
-  emprendimiento: {
-    titulo: "Mundo Emprendimiento",
-    motto: "Sendas para el crecimiento",
-    imagen: "assets/mundos/emprendimiento.png",
-    descripcion:
-      "Este mundo es para las personas soñadoras que se atreven a transformar ideas en realidades. Si sientes el deseo de crear algo propio, de resolver necesidades, de proponer alternativas o generar impacto a través de proyectos sostenibles, este es tu espacio. Aquí nacen negocios, iniciativas comunitarias, marcas personales y propuestas que abren oportunidades para ti y para otros.",
-    areas: [
-      "Creación de productos o marcas propias",
-      "Negocios digitales",
-      "Innovadores y Startups",
-      "Desarrolladores de Producto",
-      "Creadores de contenido / Influencers",
-      "Diseñadores de Marca / Branding",
-      "Coach de negocios o vida",
-      "Consultores independientes",
-      "Freelancers (diseño, programación, marketing, etc.)",
-      "Empresarios de impacto social o ambiental",
-      "Gestores de innovación y tecnología",
-      "Producción y venta de alimentos",
-      "Comercio digital / E-commerce",
-      "Iniciativas independientes en arte, moda, tecnología, educación",
-    ],
-    invitados: [
-      {
-        nombre: "Sofia Vargas",
-        imagen: "https://picsum.photos/200",
-        salón: "401D",
-      },
-      {
-        nombre: "Diego Morales",
-        imagen: "https://picsum.photos/200",
-        salón: "403D",
-      },
-      {
-        nombre: "Valentina Ruiz",
-        imagen: "https://picsum.photos/200",
-        salón: "405D",
-      },
-    ],
-  },
-};
+// Función para cargar datos desde el JSON
+async function cargarDatos() {
+  try {
+    const response = await fetch("data/mundos.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    claves = data.claves;
+    mundosInfo = data.mundosInfo;
+
+    // Una vez cargados los datos, inicializar la aplicación
+    inicializarAplicacion();
+  } catch (error) {
+    console.error("Error cargando datos:", error);
+    // Fallback: usar datos por defecto si falla el fetch
+    alert("Error cargando datos. Por favor, recarga la página.");
+  }
+}
 
 // Estado de la aplicación
 let progreso = {};
@@ -533,9 +396,9 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Inicialización
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM cargado, inicializando..."); // Debug
+// Función de inicialización de la aplicación
+function inicializarAplicacion() {
+  console.log("Inicializando aplicación..."); // Debug
 
   // Verificar que los elementos existen
   console.log("Botón anterior:", prevBtn); // Debug
@@ -547,6 +410,14 @@ document.addEventListener("DOMContentLoaded", () => {
   mostrarPagina(1);
 
   console.log("Inicialización completada"); // Debug
+}
+
+// Inicialización
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM cargado, cargando datos..."); // Debug
+
+  // Cargar datos del JSON antes de inicializar
+  cargarDatos();
 });
 
 // Función para ir a una página específica (útil para debugging)

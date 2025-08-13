@@ -8,6 +8,7 @@
   --white: #ffffff;
   --light-gray: #f9f9f9;
   --dark-gray: #333333;
+  --yellow: #e4d500;
 }
 
 * {
@@ -720,7 +721,167 @@ button {
 }
 
 .passport-question {
-  margin-top: -10px;
+  margin-top: 0;
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 1.3;
+}
+
+/* Estilos específicos para la página 4 - Info del pasaporte */
+#page-4 .page-content {
+  padding: 25px 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#page-4 .info-content {
+  background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+  border-radius: 16px;
+  padding: 25px 20px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(43, 170, 226, 0.1);
+  max-width: 100%;
+}
+
+#page-4 .info-content p {
+  margin-bottom: 20px;
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#page-4 .info-content ul {
+  margin: 20px 0;
+  padding-left: 25px;
+  list-style: none;
+}
+
+#page-4 .info-content li {
+  margin-bottom: 15px;
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 25px;
+}
+
+#page-4 .info-content li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  color: var(--accent-pink);
+}
+
+#page-4 .info-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* Estilos para los nuevos elementos de la página 4 */
+#page-4 .info-header {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+#page-4 .info-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, var(--accent-pink), var(--light-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+#page-4 .info-intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  margin-bottom: 0;
+}
+
+#page-4 .info-intro strong {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+#page-4 .info-features {
+  margin: 25px 0;
+  padding-left: 25px;
+}
+
+#page-4 .info-footer {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(43, 170, 226, 0.2);
+}
+
+#page-4 .info-encouragement {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 360px) {
+  #page-4 .page-content {
+    padding: 20px 15px;
+    padding-top: 25px;
+  }
+
+  #page-4 .info-content {
+    padding: 20px 15px;
+    margin: 0 auto;
+  }
+
+  .passport-question {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  #page-4 .info-content p,
+  #page-4 .info-content li {
+    font-size: 0.85rem;
+  }
+
+  #page-4 .info-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+  }
+}
+
+/* Responsive para móviles medianos */
+@media (max-width: 480px) and (min-width: 361px) {
+  #page-4 .page-content {
+    padding: 22px 18px;
+    padding-top: 25px;
+  }
+
+  #page-4 .info-content {
+    padding: 22px 18px;
+    margin: 0 auto;
+  }
+
+  .passport-question {
+    font-size: 1.7rem;
+  }
+}
+
+/* Mejoras para pantallas táctiles */
+@media (hover: none) and (pointer: coarse) {
+  #page-4 .info-content {
+    border: 2px solid rgba(43, 170, 226, 0.15);
+  }
 }
 
 /* Página de Mundos Vocacionales */
@@ -736,7 +897,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 .world-card {
@@ -749,10 +910,25 @@ button {
   border: 2px solid transparent;
 }
 
+#world-ejecutivo {
+  border-color: var(--green);
+}
+
+#world-social {
+  border-color: var(--primary-blue);
+}
+
+#world-emprendimiento {
+  border-color: var(--accent-pink);
+}
+
+#world-oficios {
+  border-color: var(--yellow);
+}
+
 .world-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  border-color: var(--accent-pink);
 }
 
 .world-badge {
