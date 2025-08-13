@@ -27,6 +27,7 @@ const mundosInfo = {
   ejecutivo: {
     titulo: "Mundo Ejecutivo",
     motto: "Lidera, Decide, Transforma",
+    imagen: "assets/mundos/ejecutivo.png",
     descripcion:
       "Si tu vocación se enfoca en el mundo corporativo, empresas e instituciones de diferente índole, y sientes que tu proyecto de vida te llama a crecer y contribuir al crecimiento de alguna organización, entonces este es tu lugar para mover la inspiración en otros/as.",
     areas: [
@@ -41,6 +42,7 @@ const mundosInfo = {
   social: {
     titulo: "Mundo Social",
     motto: "Profesiones al servicio de la vida",
+    imagen: "assets/mundos/social.png",
     descripcion:
       "Este mundo convoca a aquellas personas que se sienten llamadas a servir y transformar a las comunidades en las que viven y/o se relacionan. Ven si te permites conocer, escuchar, sentir la historia, el dolor, el amor y las alegrías de las comunidades y está dispuesto a vivir sus luchas y hacer parte de la transformación de sus mundos.",
     areas: [
@@ -56,6 +58,7 @@ const mundosInfo = {
   oficios: {
     titulo: "Mundo Oficios",
     motto: "Maestros de la práctica. La vocación del corazón a la práctica",
+    imagen: "assets/mundos/oficios.png",
     descripcion:
       "Este mundo convoca a quienes, con sus manos, saberes y oficios, hacen posible la vida diaria de nuestras comunidades. Personas que transforman, reparan, crean, cuidan, cocinan, construyen y sostienen desde lo práctico y lo esencial. Ven si sientes que tu vocación está en lo concreto, en lo útil, en lo que se hace con destreza, compromiso y amor por los demás.",
     areas: [
@@ -71,6 +74,7 @@ const mundosInfo = {
   emprendimiento: {
     titulo: "Mundo Emprendimiento",
     motto: "Crea Sendas, impulsa el crecimiento",
+    imagen: "assets/mundos/emprendimiento.png",
     descripcion:
       "Este mundo es para las personas soñadoras que se atreven a transformar ideas en realidades. Si sientes el deseo de crear algo propio, de resolver necesidades, de proponer alternativas o generar impacto a través de proyectos sostenibles, este es tu espacio. Aquí nacen negocios, iniciativas comunitarias, marcas personales y propuestas que abren oportunidades para ti y para otros.",
     areas: [
@@ -146,23 +150,24 @@ function actualizarInsignias() {
     const medal = document.getElementById(`medal-${mundo}`);
 
     if (progreso[mundo]) {
-      badge.textContent = "🏅";
+      // Crear imagen del mundo desbloqueado
+      badge.innerHTML = `<img src="${mundosInfo[mundo].imagen}" alt="${mundosInfo[mundo].titulo}" class="world-badge-image">`;
       badge.classList.remove("locked");
       badge.classList.add("unlocked");
       status.textContent = "Desbloqueado";
       status.classList.add("unlocked");
       if (medal) {
-        medal.textContent = "🏅";
+        medal.innerHTML = `<img src="${mundosInfo[mundo].imagen}" alt="${mundosInfo[mundo].titulo}" class="world-medal-image">`;
         medal.classList.add("unlocked");
       }
     } else {
-      badge.textContent = "🔒";
+      badge.innerHTML = `<img src="${mundosInfo[mundo].imagen}" alt="${mundosInfo[mundo].titulo}" class="world-badge-image locked">`;
       badge.classList.remove("unlocked");
       badge.classList.add("locked");
       status.textContent = "Bloqueado";
       status.classList.remove("unlocked");
       if (medal) {
-        medal.textContent = "🔒";
+        medal.innerHTML = `<img src="${mundosInfo[mundo].imagen}" alt="${mundosInfo[mundo].titulo}" class="world-medal-image locked">`;
         medal.classList.remove("unlocked");
       }
     }
