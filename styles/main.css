@@ -70,6 +70,99 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+/* Items decorativos de la portada */
+.portada-item {
+  position: absolute;
+  z-index: 10;
+}
+
+.portada-item-superior>.portada-item {
+  padding-right: 10px;
+}
+
+/* Contenedor de la página debe ser relativo para contener los items absolutos */
+.page-content {
+  position: relative;
+}
+
+/* Items que NO tienen position absolute */
+.portada-item-superior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.portada-item-superior .portada-item {
+  position: static;
+  width: 80px;
+}
+
+.portada-item-superior .portada-item img {
+  transition: all 0.3s ease;
+}
+
+.portada-item-superior .portada-item:hover img {
+  transform: scale(1.1);
+}
+
+
+
+.portada-item img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.portada-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Posicionamiento específico de cada item */
+
+
+.item-4 {
+  scale: 1.6;
+}
+
+.item-5 {
+  scale: 1.6;
+}
+
+
+
+/* Responsive para los items */
+@media (max-width: 480px) {
+  .portada-item-superior {
+    margin-bottom: 15px;
+    padding: 0 15px;
+    gap: 30px;
+  }
+
+  .portada-item-superior .portada-item {
+    width: 65px;
+  }
+
+
+}
+
+@media (max-width: 360px) {
+  .portada-item-superior {
+    margin-bottom: 12px;
+    padding: 0 10px;
+    gap: 25px;
+  }
+
+  .portada-item-superior .portada-item {
+    width: 55px;
+  }
+
+
 }
 
 .passport-cover h1 {
@@ -88,11 +181,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+
 }
 
 .muñequita-image {
-  width: 120px;
+  width: 200px;
   height: auto;
   max-width: 100%;
   border-radius: 15px;
@@ -101,6 +194,25 @@ button {
 
 .muñequita-image:hover {
   transform: scale(1.05);
+}
+
+/* Media queries para hacer la imagen responsive */
+@media (min-width: 1200px) {
+  .muñequita-image {
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .muñequita-image {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .muñequita-image {
+    width: 140px;
+  }
 }
 
 .subtitle {
@@ -644,15 +756,15 @@ button {
 
   .passport-cover h1 {
     font-size: 1.6rem;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
   }
 
   .passport-icon {
-    margin: 20px 0;
+    margin: 1px 0;
   }
 
   .muñequita-image {
-    width: 100px;
+    width: 180px;
   }
 
   .badge-large {
@@ -749,6 +861,11 @@ button {
     padding: 20px 12px;
   }
 
+
+  .muñequita-image {
+    width: 100px;
+  }
+
   /* Página 1: Portada */
   .passport-cover {
     justify-content: flex-start;
@@ -766,7 +883,7 @@ button {
   }
 
   .muñequita-image {
-    width: 80px;
+    width: 170px;
   }
 
   .subtitle {
