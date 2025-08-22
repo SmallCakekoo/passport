@@ -649,7 +649,7 @@ button {
 
 /* Modal del mapa */
 .map-modal-content {
-  max-width: 50vw;
+  max-width: 90vw;
   max-height: 90vh;
   overflow: auto;
 }
