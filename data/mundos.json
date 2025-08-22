@@ -38,32 +38,50 @@
       "invitados": [
         {
           "nombre": "Karen Viafara",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Ingeniera Civil",
+          "imagen": "assets/female.png",
           "salón": "104D"
         },
         {
           "nombre": "Jhoan Andrés Lemos Grajales",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Sociólogo & Supervisor",
+          "imagen": "assets/male.png",
           "salón": "104D"
         },
         {
           "nombre": "Jose Alejandro Rodriguez",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Director Centro Eduteka",
+          "imagen": "assets/male.png",
+          "salón": "104D"
+        },
+        {
+          "nombre": "Claudia Medina",
+          "rol": "Contadora",
+          "imagen": "assets/female.png",
           "salón": "104D"
         },
         {
           "nombre": "Jaime Ceron",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Gerente de estrategia ILLUMIA Latam",
+          "imagen": "assets/male.png",
           "salón": "105D"
         },
         {
           "nombre": "David Sánchez Aragon",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Psicólogo organizacional y educativo",
+          "imagen": "assets/male.png",
           "salón": "105D"
         },
         {
           "nombre": "Nicole Dayana Guerra Caro",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Asistente de programación académica",
+          "imagen": "assets/female.png",
+          "salón": "105D"
+        },
+        {
+          "nombre": "Carlos Rojas",
+          "rol": "Servidor público",
+          "imagen": "assets/male.png",
           "salón": "105D"
         }
       ]
@@ -85,42 +103,50 @@
       "invitados": [
         {
           "nombre": "Diego Fernando Sarmiento Bonilla",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Trabajador social",
+          "imagen": "assets/male.png",
           "salón": "106D"
         },
         {
-          "nombre": "Joseph Sebastian Lozano Aguilar",
-          "imagen": "https://picsum.photos/200",
-          "salón": "108D"
+          "nombre": "Arantxa Isabela Castellanos Rendon",
+          "rol": "Arquitecta en legalizaciones",
+          "imagen": "assets/female.png",
+          "salón": "106D"
         },
         {
           "nombre": "Lesdy Tatiana Larrahondo Barona",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Artista visual, muralista y actriz",
+          "imagen": "assets/female.png",
           "salón": "107D"
         },
         {
           "nombre": "Elizabeth Vasquez",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Ingeniera biomédica",
+          "imagen": "assets/female.png",
           "salón": "107D"
-        },
-        {
-          "nombre": "Arantxa Isabela Castellanos Rendon",
-          "imagen": "https://picsum.photos/200",
-          "salón": "106D"
-        },
-        {
-          "nombre": "Gonzalo Gutiérrez Lleras",
-          "imagen": "https://picsum.photos/200",
-          "salón": "108D"
         },
         {
           "nombre": "Andrew Silva",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Director General de Fundación Ser para Ser",
+          "imagen": "assets/male.png",
           "salón": "107D"
         },
         {
+          "nombre": "Joseph Sebastian Lozano Aguilar",
+          "rol": "Director de la COASI & Trabajador Social",
+          "imagen": "assets/male.png",
+          "salón": "108D"
+        },
+        {
+          "nombre": "Gonzalo Gutiérrez Lleras",
+          "rol": "Director General de Fundación Chiquitines",
+          "imagen": "assets/male.png",
+          "salón": "108D"
+        },
+        {
           "nombre": "Anne Ñuscua",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Activista Ambiental",
+          "imagen": "assets/female.png",
           "salón": "108D"
         }
       ]
@@ -141,59 +167,64 @@
       ],
       "invitados": [
         {
-          "nombre": "Brayhan Steven García",
-          "imagen": "https://picsum.photos/200",
-          "salón": "301D"
-        },
-        {
           "nombre": "Alváro Salazar",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Psicólogo - Terapeuta",
+          "imagen": "assets/male.png",
           "salón": "301D"
         },
         {
           "nombre": "Juan Sebastián Salas Herrera",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Abogado deportista - docente",
+          "imagen": "assets/male.png",
+          "salón": "301D"
+        },
+        {
+          "nombre": "Nicolás Ramirez",
+          "rol": "Docente",
+          "imagen": "assets/male.png",
           "salón": "301D"
         },
         {
           "nombre": "Mario Alejandro Payan Viafara",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Ingeniero de sistemas",
+          "imagen": "assets/male.png",
           "salón": "302D"
         },
         {
           "nombre": "Esteban Riaño",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Cocinero",
+          "imagen": "assets/male.png",
           "salón": "302D"
         },
         {
           "nombre": "Sebastián Díaz Millán",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Entrenador deportista",
+          "imagen": "assets/male.png",
           "salón": "302D"
         },
         {
           "nombre": "Huber Elkin Solano",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Docente & Emprendedor de Nexus",
+          "imagen": "assets/male.png",
           "salón": "303D"
         },
         {
           "nombre": "Francisco Javier Pérez Pérez",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Barista",
+          "imagen": "assets/male.png",
           "salón": "303D"
         },
         {
           "nombre": "Laura Ximena Pedreros Erazo",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Diseñadora Industrial",
+          "imagen": "assets/female.png",
           "salón": "303D"
         },
         {
           "nombre": "María Fernanda Ruiz Moreno",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Enfermera",
+          "imagen": "assets/female.png",
           "salón": "303D"
-        },
-        {
-          "nombre": "Nicolás Ramirez",
-          "imagen": "https://picsum.photos/200",
-          "salón": "302D"
         }
       ]
     },
@@ -221,52 +252,62 @@
       "invitados": [
         {
           "nombre": "Juan Carlos Lazt",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Emprendimiento y Ventas",
+          "imagen": "assets/male.png",
           "salón": "206D"
         },
         {
           "nombre": "Johnny Coffey",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Gerente e inversionista",
+          "imagen": "assets/male.png",
           "salón": "206D"
         },
         {
           "nombre": "Maria Camila Diaz",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Psicoterapeuta, tallerista, bailarina y escritora para mujeres",
+          "imagen": "assets/female.png",
           "salón": "206D"
         },
         {
           "nombre": "Tatiana Gutiérrez Espinosa",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Abogada y emprendedora",
+          "imagen": "assets/female.png",
           "salón": "207D"
         },
         {
           "nombre": "Sergio Luna Otalora",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Odontólogo",
+          "imagen": "assets/male.png",
           "salón": "207D"
         },
         {
           "nombre": "Valentina García",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Emprendedora y creadora de contenido",
+          "imagen": "assets/female.png",
           "salón": "207D"
         },
         {
           "nombre": "Andrés Felipe López Muñoz",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Actor, Docente de Teatro y Director de Colectivo Barahúnda",
+          "imagen": "assets/male.png",
           "salón": "208D"
         },
         {
           "nombre": "Karen López",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Emprendedora, creadora de contenido y abogada",
+          "imagen": "assets/female.png",
           "salón": "208D"
         },
         {
           "nombre": "Valeria Pérez",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Emprendedora",
+          "imagen": "assets/female.png",
           "salón": "208D"
         },
         {
           "nombre": "Luz Carime Rentería López",
-          "imagen": "https://picsum.photos/200",
+          "rol": "Emprendedora, Gestora de Bienestar en Icesi, y conferencista",
+          "imagen": "assets/female.png",
           "salón": "208D"
         }
       ]

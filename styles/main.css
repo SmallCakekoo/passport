@@ -79,7 +79,7 @@ button {
   z-index: 10;
 }
 
-.portada-item-superior>.portada-item {
+.portada-item-superior > .portada-item {
   padding-right: 10px;
 }
 
@@ -111,8 +111,6 @@ button {
   transform: scale(1.1);
 }
 
-
-
 .portada-item img {
   width: 100%;
   height: auto;
@@ -125,7 +123,6 @@ button {
 
 /* Posicionamiento específico de cada item */
 
-
 .item-4 {
   scale: 1.6;
 }
@@ -133,8 +130,6 @@ button {
 .item-5 {
   scale: 1.6;
 }
-
-
 
 /* Responsive para los items */
 @media (max-width: 480px) {
@@ -147,8 +142,6 @@ button {
   .portada-item-superior .portada-item {
     width: 65px;
   }
-
-
 }
 
 @media (max-width: 360px) {
@@ -161,8 +154,6 @@ button {
   .portada-item-superior .portada-item {
     width: 55px;
   }
-
-
 }
 
 .passport-cover h1 {
@@ -181,7 +172,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .muñequita-image {
@@ -659,7 +649,7 @@ button {
 
 /* Modal del mapa */
 .map-modal-content {
-  max-width: 90vw;
+  max-width: 50vw;
   max-height: 90vh;
   overflow: auto;
 }
@@ -670,7 +660,7 @@ button {
 }
 
 .feria-map {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -860,7 +850,6 @@ button {
     justify-content: flex-start;
     padding: 20px 12px;
   }
-
 
   .muñequita-image {
     width: 100px;
@@ -1379,7 +1368,6 @@ button {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 8px;
-  border: 3px solid var(--accent-pink);
 }
 
 .world-info-modal-content .guest-info h5 {
@@ -1393,6 +1381,14 @@ button {
   color: var(--dark-gray);
   font-size: 0.8rem;
   margin: 0;
+}
+
+.world-info-modal-content .guest-rol {
+  display: block;
+  margin: 0;
+  line-height: 1;
+  font-size: 0.7rem;
+  padding-bottom: 8px;
 }
 
 /* Página de Encuesta */

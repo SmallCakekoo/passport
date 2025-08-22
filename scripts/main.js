@@ -139,6 +139,7 @@ function mostrarInfoMundo(mundo) {
               <img src="${invitado.imagen}" alt="${invitado.nombre}" class="guest-image">
               <div class="guest-info">
                 <h5>${invitado.nombre}</h5>
+                <i class="guest-rol">Rol: ${invitado.rol}</i>
                 <p class="guest-room">Salón: ${invitado.salón}</p>
               </div>
             </div>
