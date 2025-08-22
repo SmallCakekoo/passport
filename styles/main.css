@@ -189,7 +189,7 @@ button {
 /* Media queries para hacer la imagen responsive */
 @media (min-width: 1200px) {
   .muñequita-image {
-    width: 250px;
+    width: 450px;
   }
 }
 
@@ -201,7 +201,7 @@ button {
 
 @media (max-width: 480px) {
   .muñequita-image {
-    width: 140px;
+    width: 380px;
   }
 }
 
@@ -754,7 +754,7 @@ button {
   }
 
   .muñequita-image {
-    width: 180px;
+    width: 480px;
   }
 
   .badge-large {
@@ -872,7 +872,7 @@ button {
   }
 
   .muñequita-image {
-    width: 170px;
+    width: 370px;
   }
 
   .subtitle {
